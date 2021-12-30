@@ -1,0 +1,18 @@
+<div class="detail-container">
+
+<div>
+  <img [src]="product.img">
+  <h1>{{product.title}}</h1>
+  <p>{{product.exitYear}} anno di uscita</p>
+  <p>{{product.productHeight}}cm altezza prodotto</p>
+  <p>{{product.productWeight}}gr peso prodotto</p>
+  <p>{{product.itemsProduced}} items prodotti</p>
+  <p>{{product.description}} descrizione</p>
+  <p>{{product.price}} $</p>
+ <div class="btn-container">
+  <button class="btn btn-warning" (click)="add.emit()">aquista</button>
+  <button class="btn btn-danger" (click)="closeDetail.emit()">chiudi</button>
+ </div>
+
+</div>
+</div>

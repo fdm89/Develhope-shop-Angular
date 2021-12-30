@@ -1,0 +1,13 @@
+<div class="list-container" *ngFor="let product of products">
+  <img width="200px" height="200px" [src]="product.img">
+  <div>
+    <p>{{product.title}}</p>
+    <p>{{product.price}}$</p>
+    <button class="btn btn-warning" (click)="showdetail.emit(product)">mostra dettagli</button>
+  </div>
+
+</div>
+
+<div>
+
+</div>

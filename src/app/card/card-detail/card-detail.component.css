@@ -1,0 +1,22 @@
+.detail-container{
+  margin-left: 500px;
+  margin-top: -1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  margin-left: 170px;
+}
+
+h1{
+  margin-left: 100px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -200px;
+
+
+}

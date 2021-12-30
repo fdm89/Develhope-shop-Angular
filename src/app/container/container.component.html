@@ -1,0 +1,25 @@
+<h2 class="p-3 ml-4">DevelHope Shop</h2>
+<button class="btn btn-primary cart">carrello({{cart}} )</button>
+<div class="main-container">
+  <div class="list-container">
+    <app-card-list [products]="products" (showdetail)="show($event)"></app-card-list>
+  </div>
+  <div class="detail-homepage-container">
+
+  </div>
+</div>
+
+<app-card-detail [product]="selectedProduct" (closeDetail)="close()" (add)="addToCart()" *ngIf="selectedProduct; else hero"></app-card-detail>
+
+
+
+<ng-template #hero>
+
+  <div class="shop-container">
+    <p>Benvenuti nello shop di develhope</p>
+  <img src="https://www.develhope.co/_nuxt/img/cav_black.9dc2b13.svg" width="500px">
+   <p>clicca sui dettagli dei prodotti per visualizzare le informazioni</p>
+</div>
+
+</ng-template>
+
